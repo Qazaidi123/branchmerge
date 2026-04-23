@@ -5,9 +5,7 @@ pipeline {
 
         stage ("Clone Git repo") {
             step {
-                url: "https://github.com/Qazaidi123/branchmerge.git", 
-                credentailsID: "git-creds", 
-                branch: "main"
+                url: "https://github.com/Qazaidi123/branchmerge.git",  credentailsID: "git-creds",  branch: "main"
             }
         }
 
