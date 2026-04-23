@@ -9,7 +9,7 @@ pipeline {
             }
         }
 
-        stage (Merge developer branch to main) {
+        stage ("Merge developer branch to main") {
             steps {
                 withCredentials ([usernamePassword(
                     credentailsID: "git-creds",
